@@ -1,0 +1,26 @@
+/* Membuat gambar pada kartu Bootstrap bergerak secara vertikal */
+.card-img-top:hover {
+    animation: slide-vertically 2s 1;
+  }
+  
+  @keyframes slide-vertically {
+    0% {
+      transform: translateY(30%);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .card-img-top:active {
+    transform: scale(115%);
+    transition: all 200ms;
+  }
+
+  .card{
+    overflow: hidden;
+  }
+
+  
